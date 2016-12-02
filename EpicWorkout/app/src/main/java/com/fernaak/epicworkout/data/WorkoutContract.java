@@ -21,6 +21,10 @@ public final class WorkoutContract {
                 ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_EXERCISE;
 
         public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_EXERCISE);
+
+        /**
+         * The need table variables needed for the exercise table
+         */
         public final static String TABLE_NAME = "exercise";
 
         public final static String _ID = BaseColumns._ID;
@@ -30,6 +34,7 @@ public final class WorkoutContract {
         public final static String COLUMN_EXERCISE_SETS = "sets";
         public final static String COLUMN_EXERCISE_REPS = "reps";
 
+        //Int values for the different areas of the body
         public static final int BODY_AREA_UNKNOWN = 0;
         public static final int BODY_AREA_ABS = 1;
         public static final int BODY_AREA_ARMS = 2;

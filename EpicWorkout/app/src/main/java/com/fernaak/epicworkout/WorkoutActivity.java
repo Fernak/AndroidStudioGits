@@ -98,12 +98,16 @@ public class WorkoutActivity extends AppCompatActivity implements LoaderManager.
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * These are the only values that will show in the listview
+     */
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         String[] projection = {
                 WorkoutEntry._ID,
                 WorkoutEntry.COLUMN_EXERCISE_NAME,
-                WorkoutEntry.COLUMN_EXERCISE_DESCRIPTION };
+                WorkoutEntry.COLUMN_EXERCISE_DESCRIPTION,
+                WorkoutEntry.COLUMN_EXERCISE_BODY_AREA};
 
         return new CursorLoader(this, WorkoutEntry.CONTENT_URI, projection, null, null, null);
     }
