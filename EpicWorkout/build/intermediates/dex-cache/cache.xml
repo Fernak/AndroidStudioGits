@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_db7b14cf279667a54559b2f7147c72a7c58ca8dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_60dd1b2d6ae5771f5b70de1dcc39e06382fc94d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6427359e6daf33e57fa7984540889f1d81dc029d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0832a543ea8ca091784c3fd0835bfee5ebde19f5">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_65b0822e59f61553176f049b955e071922bf444c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_cbdc14924b86279f4e74b1568a18be5edc66ae7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_f8851defaaada1034eee27c3cd0b18bb8b4764ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_233db8ffbe240f4736df4132331f3feb94c68335\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_f63c69e7de0d82faae2bc6f434c3004d31630fbf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_ffcf82f67c95c12061761ddeb86586e5cf3eff76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_a045b9b6112fb2f0c2f663c9291654bb4026c68c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ea2af0cb0e54503d9233e8c2b4399bdd9664d30c">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2d98b48a7a0f2659289120d85a8253ac3cb5012a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_9330790b26f209a833eea33790d8bbc789ddcfb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3fbda8fab499f9f1272b2589c8793d57c8f475aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_a3ae1b2acf225720352439f162f8b5fc9b15d940\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_1d334be35da3114f94c82eed604da7ecbc5d77ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_725227a3e2ddba8b3f55093259196f23aa91a444\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_820fb659d0a4a3e457e1d3569a2eabac7c450c06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_20704e873b06c68ebc33a83acf78fa73ec3e7bb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_1b33afb601d2c2e6eabe9cd9efdc36fafdefbe18\classes.dex" />
+    </item>
+
+</items>
