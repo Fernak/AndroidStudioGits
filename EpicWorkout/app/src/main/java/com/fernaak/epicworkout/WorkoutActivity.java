@@ -18,6 +18,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.fernaak.epicworkout.data.WorkoutContract.WorkoutEntry;
+import com.fernaak.epicworkout.ui.WorkoutCursorAdapter;
+import com.firebase.client.Firebase;
 
 
 public class WorkoutActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
@@ -25,11 +27,16 @@ public class WorkoutActivity extends AppCompatActivity implements LoaderManager.
     private static final int EXERCISE_LOADER = 0;
 
     WorkoutCursorAdapter mCursorAdapter;
+    private Firebase mRef;
+    public final String FIREBASE_URL = "https://epicworkout-7563e.firebaseio.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout);
+        Firebase.setAndroidContext(this);
+
+        mRef = new Firebase(FIREBASE_URL);
 
         // Setup FAB to open EditorActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -94,6 +101,9 @@ public class WorkoutActivity extends AppCompatActivity implements LoaderManager.
             case R.id.action_delete_all_entries:
                 deleteAllPets();
                 return true;
+            case R.id.action_add_to_firebase:
+                addToFirebase();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -123,5 +133,10 @@ public class WorkoutActivity extends AppCompatActivity implements LoaderManager.
     }
     private void deleteAllPets(){
         getContentResolver().delete(WorkoutEntry.CONTENT_URI, null, null);
+    }
+    public void  addToFirebase(){
+        Firebase mRefChild = mRef.child("Name");
+
+        mRefChild.setValue("Nolan");
     }
 }

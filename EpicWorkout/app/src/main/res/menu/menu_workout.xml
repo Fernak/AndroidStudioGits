@@ -12,4 +12,8 @@
             android:id="@+id/action_delete_all_entries"
             android:title="@string/action_delete_all_entries"
             app:showAsAction="never" />
+        <item
+            android:id="@+id/action_add_to_firebase"
+            android:title="Add to Firebase"
+            app:showAsAction="never" />
     </menu>
