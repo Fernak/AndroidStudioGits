@@ -10,29 +10,30 @@ public final class WorkoutContract {
 
     public static final String CONTENT_AUTHORITY = "com.fernaak.epicworkout";
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
-    public static final String PATH_EXERCISE = "exercise";
+    public static final String PATH_WORKOUTE = "workout";
 
-    public static final class WorkoutEntry implements BaseColumns{
+    public static final class WorkoutEntry implements BaseColumns {
 
         public static final String CONTENT_LIST_TYPE =
-                ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_EXERCISE;
+                ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_WORKOUTE;
 
         public static final String CONTENT_ITEM_TYPE =
-                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_EXERCISE;
+                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_WORKOUTE;
 
-        public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_EXERCISE);
+        public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_WORKOUTE);
 
         /**
-         * The need table variables needed for the exercise table
+         * The needed table variables needed for the workouts table
          */
-        public final static String TABLE_NAME = "exercise";
+        public final static String TABLE_NAME = "workout";
 
         public final static String _ID = BaseColumns._ID;
-        public final static String COLUMN_EXERCISE_NAME = "name";
-        public final static String COLUMN_EXERCISE_DESCRIPTION = "description";
-        public final static String COLUMN_EXERCISE_BODY_AREA = "body_area";
-        public final static String COLUMN_EXERCISE_SETS = "sets";
-        public final static String COLUMN_EXERCISE_REPS = "reps";
+        public final static String COLUMN_WORKOUT_NAME = "name";
+        public final static String COLUMN_WORKOUT_BODY_AREA = "body_area";
+        public final static String COLUMN_WORKOUT_DESCRIPTION = "description";
+        public final static String COLUMN_WORKOUT_RANK = "rank";
+        public final static String COLUMN_WORKOUT_IMAGE_REFERENCE = "image_reference";
+        public final static String COLUMN_WORKOUT_INFO = "info";
 
         //Int values for the different areas of the body
         public static final int BODY_AREA_UNKNOWN = 0;
