@@ -33,11 +33,11 @@ public class EpicWorkoutDBHelper extends SQLiteOpenHelper {
         String SQL_CREATE_WORKOUT_TABLE =  "CREATE TABLE " + WorkoutEntry.TABLE_NAME + " ("
                 + WorkoutEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + WorkoutEntry.COLUMN_WORKOUT_NAME + " TEXT NOT NULL, "
-                + WorkoutEntry.COLUMN_WORKOUT_DESCRIPTION + " TEXT, "
                 + WorkoutEntry.COLUMN_WORKOUT_BODY_AREA + " INTEGER NOT NULL, "
+                + WorkoutEntry.COLUMN_WORKOUT_DESCRIPTION + " TEXT, "
                 + WorkoutEntry.COLUMN_WORKOUT_RANK + " INTEGER NOT NULL, "
-                + WorkoutEntry.COLUMN_WORKOUT_IMAGE_REFERENCE + " TEXT, "
-                + WorkoutEntry.COLUMN_WORKOUT_INFO + " TEXT);";
+                + WorkoutEntry.COLUMN_WORKOUT_INFO + " TEXT, "
+                + WorkoutEntry.COLUMN_WORKOUT_IMAGE_REFERENCE + " TEXT);";
 
 
         db.execSQL(SQL_CREATE_EXERCISE_TABLE);

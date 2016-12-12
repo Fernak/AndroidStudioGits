@@ -4,8 +4,7 @@
     android:id="@+id/rl_fragment_exercises"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".ui.WorkoutsFragment">
+    tools:context=".TestingActivity">
 
     <ListView
         android:id="@+id/list_view_workouts_list"

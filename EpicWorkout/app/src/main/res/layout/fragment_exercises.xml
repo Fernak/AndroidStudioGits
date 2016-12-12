@@ -4,8 +4,7 @@
     android:id="@+id/rl_fragment_exercises"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".ui.ExercisesFragment">
+    tools:context=".MainActivity">
     <ListView
         android:id="@+id/list_view_exercise_list"
         android:layout_width="match_parent"
@@ -21,33 +20,3 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_fitness"/>
 </RelativeLayout>
-<!--
-Main layout for fragments tabs
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/dark_green"
-    android:orientation="vertical">
-
-    <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:theme="@style/Toolbar"/>
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Toolbar"/>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v4.view.ViewPager>
-</LinearLayout>
--->
