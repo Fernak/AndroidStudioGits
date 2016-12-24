@@ -1,37 +1,40 @@
 package com.fernaak.epicworkout;
 
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 
 import com.fernaak.epicworkout.data.ExerciseContract.ExerciseEntry;
-import com.fernaak.epicworkout.data.WorkoutContract.WorkoutEntry;
-import com.fernaak.epicworkout.ui.ExerciseCursorAdapter;
-import com.fernaak.epicworkout.ui.ExerciseItem;
+import com.fernaak.epicworkout.ui.workout_items.WorkoutRecyclerAdapter;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
-    private ListView mExerciseListView;
-    private ExerciseCursorAdapter exercisCursorAdapter;
+    private ArrayList<String> mItems = new ArrayList<>();
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.Adapter mAdapter;
+
     private static final int LOADER = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_exercises);
+        setContentView(R.layout.exercises_main);
 
+        mItems = generateValues();
         initializeScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -42,22 +45,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 startActivity(intent);
             }
         });
-        exercisCursorAdapter = new ExerciseCursorAdapter(this, null);
-        mExerciseListView.setAdapter(exercisCursorAdapter);
-
-        mExerciseListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                Intent intent = new Intent(MainActivity.this, ExerciseItem.class);
-
-                Uri currentExerciseUri = ContentUris.withAppendedId(ExerciseEntry.CONTENT_URI, id);
-
-                intent.setData(currentExerciseUri);
-
-                startActivity(intent);
-            }
-        });
-        getSupportLoaderManager().initLoader(LOADER, null, this);
+        /**
+         * RecyclerView
+         */
+        //mLayoutManager = new LinearLayoutManager(this); --> for a stacked card layout
+        mLayoutManager = new GridLayoutManager(this, 2);//--> for a 2 row card layout
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mAdapter = new WorkoutRecyclerAdapter(this, mItems);
+        //mAdapter = new WorkoutRecyclerAdapter(this);
+        mRecyclerView.setAdapter(mAdapter);
+        //getSupportLoaderManager().initLoader(LOADER, null, this);
     }
 
     @Override
@@ -84,17 +81,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
     //Initialize the components of the layout
     public void initializeScreen() {
-        /**
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
-        setSupportActionBar(toolbar);
-        SectionPagerAdapter adapter = new SectionPagerAdapter(getSupportFragmentManager());
-        viewPager.setOffscreenPageLimit(2);
-        viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);
-         */
-        mExerciseListView = (ListView) findViewById(R.id.list_view_exercise_list);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     }
 
     @Override
@@ -114,62 +101,17 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        exercisCursorAdapter.swapCursor(data);
+        //exerciseCursorAdapter.swapCursor(data);
     }
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-        exercisCursorAdapter.swapCursor(null);
+        //exerciseCursorAdapter.swapCursor(null);
     }
 
     /**
-     *  The class that handels the pager
+     * Enter a garbage item to the table
      */
-    /**
-    public class SectionPagerAdapter extends FragmentStatePagerAdapter {
-
-        public SectionPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-
-            Fragment fragment = null;
-
-            switch (position) {
-                case 0:
-                    fragment = ExercisesFragment.newInstance();
-                    break;
-                case 1:
-                    fragment = WorkoutsFragment.newInstance();
-                    break;
-                default:
-                    fragment = ExercisesFragment.newInstance();
-                    break;
-            }
-
-            return fragment;
-        }
-
-
-        @Override
-        public int getCount() {
-            return 2;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return getString(R.string.pager_title_Exercises);
-                case 1:
-                default:
-                    return getString(R.string.pager_title_Workouts);
-            }
-        }
-    }
-    */
     private void insertExercise() {
         // Create a ContentValues object where column names are the keys,
         // and Toto's pet attributes are the values.
@@ -183,6 +125,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_VIDEO_REFERENCE, "stuff");
 
         getContentResolver().insert(ExerciseEntry.CONTENT_URI, exerciseValues);
+    }
+    public static ArrayList<String> generateValues(){
+        ArrayList<String> dummyValues = new ArrayList<>();
+        for (int i = 1; i < 101; i++){
+            dummyValues.add("Item " +i);
+        }
+        return dummyValues;
     }
 }
 

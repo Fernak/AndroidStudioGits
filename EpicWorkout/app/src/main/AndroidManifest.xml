@@ -25,7 +25,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".ui.ExerciseItem"
+            android:name=".ui.exercise_items.ExercisePage"
             android:label="Exercise Item"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -34,7 +34,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".ui.WorkoutItem"
+            android:name=".ui.workout_items.WorkoutPage"
             android:label="Workout Item"
             android:parentActivityName=".TestingActivity"
             android:theme="@style/AppTheme.NoActionBar">

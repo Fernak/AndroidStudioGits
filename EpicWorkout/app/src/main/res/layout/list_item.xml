@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#AEB6BD"  />
+            android:textColor="#AEB6BD"
+            android:text="stuff"/>
     </LinearLayout>
 </LinearLayout>

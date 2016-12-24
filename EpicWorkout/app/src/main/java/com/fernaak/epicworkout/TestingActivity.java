@@ -1,38 +1,41 @@
 package com.fernaak.epicworkout;
 
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
-import com.fernaak.epicworkout.data.ExerciseContract.ExerciseEntry;
 import com.fernaak.epicworkout.data.WorkoutContract.WorkoutEntry;
-import com.fernaak.epicworkout.ui.ExerciseCursorAdapter;
-import com.fernaak.epicworkout.ui.ExerciseItem;
-import com.fernaak.epicworkout.ui.WorkoutItem;
+import com.fernaak.epicworkout.ui.workout_items.WorkoutRecyclerAdapter;
+
+import java.util.ArrayList;
 
 public class TestingActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
-    private ListView mWorkoutListView;
-    private ExerciseCursorAdapter workoutCursorAdapter;
+
+    private ArrayList<String> mItems = new ArrayList<>();
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.Adapter mAdapter;
+
     private static final int LOADER = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_workout);
+        setContentView(R.layout.workout_main);
 
+        mItems = generateValues();
         initializeScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -43,22 +46,17 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
                 startActivity(intent);
             }
         });
-        workoutCursorAdapter = new ExerciseCursorAdapter(this, null);
-        mWorkoutListView.setAdapter(workoutCursorAdapter);
+        /**
+         * RecyclerView
+         */
+        //mLayoutManager = new LinearLayoutManager(this); --> for a stacked card layout
+        mLayoutManager = new GridLayoutManager(this, 2);//--> for a 2 row card layout
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mAdapter = new WorkoutRecyclerAdapter(this, mItems);
+        //mAdapter = new WorkoutRecyclerAdapter(this);
+        mRecyclerView.setAdapter(mAdapter);
+        //getSupportLoaderManager().initLoader(LOADER, null, this);
 
-        mWorkoutListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                Intent intent = new Intent(TestingActivity.this, WorkoutItem.class);
-
-                Uri currentExerciseUri = ContentUris.withAppendedId(WorkoutEntry.CONTENT_URI, id);
-
-                intent.setData(currentExerciseUri);
-
-                startActivity(intent);
-            }
-        });
-        getSupportLoaderManager().initLoader(LOADER, null, this);
     }
 
     @Override
@@ -86,7 +84,8 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
 
     //Initialize the components of the layout
     public void initializeScreen() {
-        mWorkoutListView = (ListView) findViewById(R.id.list_view_workouts_list);
+        //mWorkoutListView = (ListView) findViewById(R.id.list_view_workouts_list);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     }
 
     @Override
@@ -105,68 +104,19 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        workoutCursorAdapter.swapCursor(data);
+        //workoutCursorAdapter.swapCursor(data);
     }
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-        workoutCursorAdapter.swapCursor(null);
+        //workoutCursorAdapter.swapCursor(null);
     }
-
-    /**
-     *  The class that handels the pager
-     */
-    /**
-     public class SectionPagerAdapter extends FragmentStatePagerAdapter {
-
-     public SectionPagerAdapter(FragmentManager fm) {
-     super(fm);
-     }
-
-     @Override
-     public Fragment getItem(int position) {
-
-     Fragment fragment = null;
-
-     switch (position) {
-     case 0:
-     fragment = ExercisesFragment.newInstance();
-     break;
-     case 1:
-     fragment = WorkoutsFragment.newInstance();
-     break;
-     default:
-     fragment = ExercisesFragment.newInstance();
-     break;
-     }
-
-     return fragment;
-     }
-
-
-     @Override
-     public int getCount() {
-     return 2;
-     }
-
-     @Override
-     public CharSequence getPageTitle(int position) {
-     switch (position) {
-     case 0:
-     return getString(R.string.pager_title_Exercises);
-     case 1:
-     default:
-     return getString(R.string.pager_title_Workouts);
-     }
-     }
-     }
-     */
 
     private void insertWorkout() {
 
         ContentValues workoutValues = new ContentValues();
         workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_NAME, "Get Shredded");
-        workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_BODY_AREA, ExerciseEntry.BODY_AREA_ABS);
+        workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_BODY_AREA, WorkoutEntry.BODY_AREA_ABS);
         workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_DESCRIPTION, "Get them guns");
         workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_RANK, 1);
         workoutValues.put(WorkoutEntry.COLUMN_WORKOUT_INFO, "stuff");
@@ -174,6 +124,12 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
 
         getContentResolver().insert(WorkoutEntry.CONTENT_URI, workoutValues);
     }
-
+    public static ArrayList<String> generateValues(){
+        ArrayList<String> dummyValues = new ArrayList<>();
+        for (int i = 1; i < 101; i++){
+            dummyValues.add("Item " +i);
+        }
+        return dummyValues;
+    }
 }
 
