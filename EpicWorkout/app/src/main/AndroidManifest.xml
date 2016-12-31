@@ -10,7 +10,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Exercises">
+            android:label="Exercises"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -19,7 +20,8 @@
         <activity
             android:name=".TestingActivity"
             android:label="Workouts"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
@@ -44,7 +46,7 @@
         </activity>
         <provider
             android:authorities="com.fernaak.epicworkout"
-            android:name=".data.ContentProvider"
+            android:name=".data.EpicWorkoutContentProvider"
             android:exported="false"/>
     </application>
 </manifest>

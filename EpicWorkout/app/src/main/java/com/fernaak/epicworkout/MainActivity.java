@@ -3,38 +3,37 @@ package com.fernaak.epicworkout;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.MatrixCursor;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
+import android.widget.ImageView;
 
+import com.fernaak.epicworkout.adapters.ExerciseRecyclerAdapter;
 import com.fernaak.epicworkout.data.ExerciseContract.ExerciseEntry;
-import com.fernaak.epicworkout.ui.workout_items.WorkoutRecyclerAdapter;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
-    private ArrayList<String> mItems = new ArrayList<>();
 
+    private Toolbar mToolbar;
+    private ImageView mExerciseImage;
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
-    private RecyclerView.Adapter mAdapter;
-
-    private static final int LOADER = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exercises_main);
 
-        mItems = generateValues();
         initializeScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -45,16 +44,19 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 startActivity(intent);
             }
         });
+        // Set up the toolbar and display buttons
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         /**
          * RecyclerView
          */
-        //mLayoutManager = new LinearLayoutManager(this); --> for a stacked card layout
         mLayoutManager = new GridLayoutManager(this, 2);//--> for a 2 row card layout
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new WorkoutRecyclerAdapter(this, mItems);
-        //mAdapter = new WorkoutRecyclerAdapter(this);
+        ExerciseRecyclerAdapter mAdapter = new ExerciseRecyclerAdapter(this, null);
         mRecyclerView.setAdapter(mAdapter);
-        //getSupportLoaderManager().initLoader(LOADER, null, this);
+        mExerciseImage.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.gym_pic));
+
+        getSupportLoaderManager().restartLoader(0, null, this);
     }
 
     @Override
@@ -79,10 +81,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         }
         return super.onOptionsItemSelected(item);
     }
-    //Initialize the components of the layout
-    public void initializeScreen() {
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-    }
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
@@ -97,41 +95,57 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 ExerciseEntry.COLUMN_EXERCISE_IMAGE_REFERENCE,
                 ExerciseEntry.COLUMN_EXERCISE_VIDEO_REFERENCE};
 
-        return new CursorLoader(this, ExerciseEntry.CONTENT_URI, exerciseProjection, null, null, null);    }
+        return new CursorLoader(this, ExerciseEntry.CONTENT_URI, exerciseProjection, null, null, null);
+    }
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        //exerciseCursorAdapter.swapCursor(data);
+        String[] Columns = new String[]{
+                ExerciseEntry._ID,
+                ExerciseEntry.COLUMN_EXERCISE_NAME,
+                ExerciseEntry.COLUMN_EXERCISE_BODY_AREA
+        };
+        MatrixCursor mx = new MatrixCursor(Columns);
+        fillMx(data, mx);
+        ((ExerciseRecyclerAdapter)mRecyclerView.getAdapter()).swapCursor(mx);
     }
 
     @Override
-    public void onLoaderReset(Loader<Cursor> loader) {
-        //exerciseCursorAdapter.swapCursor(null);
-    }
+    public void onLoaderReset(Loader<Cursor> loader) {   }
 
+    //Initialize the components of the layout
+    public void initializeScreen() {
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mExerciseImage = (ImageView) findViewById(R.id.exercise_image);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    }
     /**
      * Enter a garbage item to the table
      */
     private void insertExercise() {
-        // Create a ContentValues object where column names are the keys,
-        // and Toto's pet attributes are the values.
         ContentValues exerciseValues = new ContentValues();
-        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_NAME, "Drag Curls");
+        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_NAME, "Curls");
         exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_BODY_AREA, ExerciseEntry.BODY_AREA_ABS);
-        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_DESCRIPTION, "Get them guns");
+        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_DESCRIPTION, "Focus the peak");
         exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_RANK, 1);
-        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_WEIGHT_TYPE, ExerciseEntry.WEIGHT_TYPE_BARBELL);
+        exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_WEIGHT_TYPE, ExerciseEntry.WEIGHT_TYPE_DUMBBELL);
         exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_IMAGE_REFERENCE, "stuff");
         exerciseValues.put(ExerciseEntry.COLUMN_EXERCISE_VIDEO_REFERENCE, "stuff");
 
         getContentResolver().insert(ExerciseEntry.CONTENT_URI, exerciseValues);
     }
-    public static ArrayList<String> generateValues(){
-        ArrayList<String> dummyValues = new ArrayList<>();
-        for (int i = 1; i < 101; i++){
-            dummyValues.add("Item " +i);
+
+    private void fillMx(Cursor data, MatrixCursor mx){
+        if(data == null)
+            return;
+        data.moveToPosition(-1);
+        while (data.moveToNext()){
+            mx.addRow(new Object[]{
+                    data.getString(data.getColumnIndex(ExerciseEntry._ID)),
+                    data.getString(data.getColumnIndex(ExerciseEntry.COLUMN_EXERCISE_NAME)),
+                    data.getString(data.getColumnIndex(ExerciseEntry.COLUMN_EXERCISE_BODY_AREA))
+            });
         }
-        return dummyValues;
     }
 }
 

@@ -3,39 +3,37 @@ package com.fernaak.epicworkout;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.MatrixCursor;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.fernaak.epicworkout.adapters.WorkoutRecyclerAdapter;
 import com.fernaak.epicworkout.data.WorkoutContract.WorkoutEntry;
-import com.fernaak.epicworkout.ui.workout_items.WorkoutRecyclerAdapter;
-
-import java.util.ArrayList;
 
 public class TestingActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    private ArrayList<String> mItems = new ArrayList<>();
-
+    private Toolbar mToolbar;
+    private ImageView mWorkoutImage;
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
-    private RecyclerView.Adapter mAdapter;
-
-    private static final int LOADER = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_main);
 
-        mItems = generateValues();
         initializeScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -46,17 +44,19 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
                 startActivity(intent);
             }
         });
+        // Set up the toolbar and display buttons
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         /**
          * RecyclerView
          */
-        //mLayoutManager = new LinearLayoutManager(this); --> for a stacked card layout
         mLayoutManager = new GridLayoutManager(this, 2);//--> for a 2 row card layout
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new WorkoutRecyclerAdapter(this, mItems);
-        //mAdapter = new WorkoutRecyclerAdapter(this);
+        WorkoutRecyclerAdapter mAdapter = new WorkoutRecyclerAdapter(this, null);
         mRecyclerView.setAdapter(mAdapter);
-        //getSupportLoaderManager().initLoader(LOADER, null, this);
+        mWorkoutImage.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.bench_pic));
 
+        getSupportLoaderManager().restartLoader(0, null, this);
     }
 
     @Override
@@ -64,6 +64,7 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+
     }
 
     @Override
@@ -82,12 +83,6 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
         return super.onOptionsItemSelected(item);
     }
 
-    //Initialize the components of the layout
-    public void initializeScreen() {
-        //mWorkoutListView = (ListView) findViewById(R.id.list_view_workouts_list);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-    }
-
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
 
@@ -104,12 +99,26 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        //workoutCursorAdapter.swapCursor(data);
+        String[] Columns = new String[]{
+                WorkoutEntry._ID,
+                WorkoutEntry.COLUMN_WORKOUT_NAME,
+                WorkoutEntry.COLUMN_WORKOUT_BODY_AREA
+        };
+        MatrixCursor mx = new MatrixCursor(Columns);
+        fillMx(data, mx);
+        ((WorkoutRecyclerAdapter)mRecyclerView.getAdapter()).swapCursor(mx);
     }
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         //workoutCursorAdapter.swapCursor(null);
+    }
+
+    //Initialize the components of the layout
+    public void initializeScreen() {
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mWorkoutImage = (ImageView) findViewById(R.id.workout_image);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
     }
 
     private void insertWorkout() {
@@ -124,12 +133,17 @@ public class TestingActivity extends AppCompatActivity implements LoaderManager.
 
         getContentResolver().insert(WorkoutEntry.CONTENT_URI, workoutValues);
     }
-    public static ArrayList<String> generateValues(){
-        ArrayList<String> dummyValues = new ArrayList<>();
-        for (int i = 1; i < 101; i++){
-            dummyValues.add("Item " +i);
+    private void fillMx(Cursor data, MatrixCursor mx){
+        if(data == null)
+            return;
+        data.moveToPosition(-1);
+        while (data.moveToNext()){
+            mx.addRow(new Object[]{
+                    data.getString(data.getColumnIndex(WorkoutEntry._ID)),
+                    data.getString(data.getColumnIndex(WorkoutEntry.COLUMN_WORKOUT_NAME)),
+                    data.getString(data.getColumnIndex(WorkoutEntry.COLUMN_WORKOUT_BODY_AREA))
+            });
         }
-        return dummyValues;
     }
 }
 
