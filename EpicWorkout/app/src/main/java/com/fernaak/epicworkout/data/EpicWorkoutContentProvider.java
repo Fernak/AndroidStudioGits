@@ -1,12 +1,10 @@
 package com.fernaak.epicworkout.data;
 
-
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 
 public class EpicWorkoutContentProvider extends android.content.ContentProvider {

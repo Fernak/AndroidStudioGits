@@ -14,11 +14,13 @@ public class WorkoutViewHolder extends RecyclerView.ViewHolder{
 
     public TextView name;
     public ImageView img;
+    public  ImageView imgMenu;
 
     public WorkoutViewHolder(View itemView) {
         super(itemView);
         name = (TextView) itemView.findViewById(R.id.name);
         img = (ImageView) itemView.findViewById(R.id.thumbnail);
+        imgMenu = (ImageView) itemView.findViewById(R.id.overflow);
     }
     public void setData(Cursor c){
         name.setText(c.getString(c.getColumnIndex(WorkoutEntry.COLUMN_WORKOUT_NAME)));

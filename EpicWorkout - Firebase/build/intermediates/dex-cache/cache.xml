@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_8bbac9435101f62c23c8552de75d74f45dec2834\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-auth\0.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9f21cd628ef85c35105a2a0e719d11dc4f89ae76">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-auth-0.6.1_bd353c44db037a515360193741bed8ae3cf41d20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_46f47c8eeaa0af8f0419f8f876bd2412e56e157a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_0fae68d68407ede67e4b5581c109c572c3e1a970\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8948aefc1cd2725ecbaab5deb3f836dd743611c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_18a5589a8f37cb48f828e4927f93e8915165cff1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_5d9ad30f38c495b1127d6055c67feffa29f4f8f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.6.1_2021b37aba70f01d602388793adea1a7812c60ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_f63c69e7de0d82faae2bc6f434c3004d31630fbf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_28d73fe2c1a45d0c2fd135d0880b0536d5220646\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3fbda8fab499f9f1272b2589c8793d57c8f475aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_a3ae1b2acf225720352439f162f8b5fc9b15d940\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.3.1_cf635a036648324f19b48b3bc623db0caee46954\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_75eda10f6b7a92d60c4388efcc6d4eb697c05847\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_bede6e05d76c2d8e0e68be6b43aca13a1eb059e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_21f775df95070c041e9940d630141afaa20c6dd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_ba60897418c2917cc89c8c2007b0281704790def\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_e9a9f21bd0c3c1ee493bbea80994945d8b16c37e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_f94db452fa4d0b71e2c9fa69871bb53b989f0a0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_dcd68a867a5fb535300a0b18fd3d83f0cf116d0f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_c2e8746bdbeeffcc68841878ddbebbc6bf1a8c92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_639ee7f0d296e26c528eb59a9a11bd3b013af088\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_1b611e4cd91396d63bdc93b636b135fe6669b6db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.1_6e2ce1716db9a93095113e11d77bd0ce69170fa8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_1d03a9efd761e2ebf14417f161ddd34fafa22b38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6427359e6daf33e57fa7984540889f1d81dc029d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.6.1_1ca0f2b3538a63436da48653c93ace96e9fd9488\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.2.1_8b53f993470f8d482e51d34ed7782939f277d184\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.14.1_fb7fce882eff982e6b76a7c300fdfa64af3a9170\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_afa000f0714fd142a5679a30312909a3d5f4bebd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.6.1_57548bc73a57d08afb68ed0142e824d05791b2de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_4400ca280fe4fbd1c2c1bc3b74bad615adf81dce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_208e2c6a451d7bc5c32669f8461b404f3929fab6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_191e2c1ea9ed578ba10caef7415335da9b5af6fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_820fb659d0a4a3e457e1d3569a2eabac7c450c06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.6.1_8723fb7d3adb0889756d14ffa0af3e1bd7d346d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.6.1_5e6f9c9436e1a653a33fb16eb24bafd723783a37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_b3764870cd606f0fd6804752e865cf3e8276d5b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\0.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a3a0e05009f5b1d19f0cabdfe7d5453a9184e1c6">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-database-0.6.1_4f9e1eb6cfdb629d8b80b3a88fdeb507b9d01f5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.1_e0d911c6a894d55f520bd6b59f99bf92429917fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_c598a8de5364885dc0fef248b1206e44430c8645\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_60dd1b2d6ae5771f5b70de1dcc39e06382fc94d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_834df44d46dd90ee569d193107b5ee1738fdc921\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.6.1_ce81b1eb0da9df6f162d2c42f5c5566bbb12cbf0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_21977fbbc29d01ca6161d6523b0225fd6650b983\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="07bd68fc9de05b54185fee8ba4c63c278f83edf8">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_65b0822e59f61553176f049b955e071922bf444c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4305303967482ed404d98c53f18ad0d52519f2c2">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a38dcdbcd285e2bf711b31fcc82f78a89000b413\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_486b920c646924c0ed7cbbcee884494c152c030f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_a1fd4037a0552198ba62ad5fe0a2a740dce0b8d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_c5a77f05821508880ebeb5ea825dff5387673bce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_9330790b26f209a833eea33790d8bbc789ddcfb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_1d334be35da3114f94c82eed604da7ecbc5d77ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_c99b230003658f2e792eff35ef2f3ccf1adbdfaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.6.1_2a47922ef632f4d353aa402b249c256b9d1dd227\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.1_33989e1975efb239e756d9a870fc452149451672\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.6.1_55c348c853b25a10035b6670c060962ab18321a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_394a44c628618ddc453a31b7d797bdddcbc5b8e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_20704e873b06c68ebc33a83acf78fa73ec3e7bb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.6.1_ba27e991586cf56cf04cafdc8c5b6759d2ae6c61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_1b33afb601d2c2e6eabe9cd9efdc36fafdefbe18\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.6.1_5174f7506f5c5abb8e332944b5d38510672b227c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_4d8d46d645366542102f484f714c96d1552be2bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_db7b14cf279667a54559b2f7147c72a7c58ca8dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_7ccd42944a7f6d1784f2e17470d1bcd59856463c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_fc0cead823420be3e95145654857307ce36debef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_cbdc14924b86279f4e74b1568a18be5edc66ae7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_f8851defaaada1034eee27c3cd0b18bb8b4764ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_233db8ffbe240f4736df4132331f3feb94c68335\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_362c6d6aa717a7ecc05204d0f04c332b3afadb49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_ffcf82f67c95c12061761ddeb86586e5cf3eff76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03b787172d9d7e5789fa64a5137242741273ae5">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0d921cc109ee4e0b0aac885d9f94fde8bdbdc739\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_a045b9b6112fb2f0c2f663c9291654bb4026c68c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_27d764096fac0ff8a01fa016ea38fe8bc05b3c43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.6.1_7640d53790bd894d83043daea37268e330e201ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eb921f532ab8d7aa3801855d01d353a0ea4606d3">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2d98b48a7a0f2659289120d85a8253ac3cb5012a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_725227a3e2ddba8b3f55093259196f23aa91a444\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.1_def523b847a78231e981722699066bd6441ad37e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.6.1_ceb8cd13d5baba53478461fdc95bbedb3dde29a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c1812a208a578fbf9d3f190bdaa5770a70a7d629\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_eb0ae1ffdc03364c74a6716a4f1edf850aaec92c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.11_6117accf8dbf717f524784a09c411be4f2f14ae9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.6.1_05296714a429a52173db9801ebdee632561858e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_88632b99e57d31c8d7cb51560e8473db926f0fea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_8df90ee9a831a8e3b98fa376bce40d1704ab9a2d\classes.dex" />
+    </item>
+
+</items>

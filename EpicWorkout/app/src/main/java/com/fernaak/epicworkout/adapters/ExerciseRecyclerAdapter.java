@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -44,6 +46,15 @@ public class ExerciseRecyclerAdapter extends CursorRecyclerViewAdapter {
                 Uri currentExerciseUri = ContentUris.withAppendedId(ExerciseEntry.CONTENT_URI, cursor.getPosition());
                 intent.setData(currentExerciseUri);
                 mContext.startActivity(intent);
+            }
+        });
+        holder.imgMenu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                PopupMenu popup = new PopupMenu(mContext, v);
+                MenuInflater inflater = popup.getMenuInflater();
+                inflater.inflate(R.menu.exercise_menu, popup.getMenu());
+                popup.show();
             }
         });
     }

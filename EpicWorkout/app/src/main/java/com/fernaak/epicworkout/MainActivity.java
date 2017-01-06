@@ -21,6 +21,12 @@ import android.widget.ImageView;
 
 import com.fernaak.epicworkout.adapters.ExerciseRecyclerAdapter;
 import com.fernaak.epicworkout.data.ExerciseContract.ExerciseEntry;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -29,10 +35,32 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
 
+    public static final String ANONYMOUS = "anonymous";
+
+    private String mUsername;
+
+    // Firebase instance variables
+    private FirebaseDatabase mFirebaseDatabase;
+    private DatabaseReference mExerciseDatabaseReference;
+    private ChildEventListener mChildEventListener;
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+    private FirebaseStorage mFirebaseStorage;
+    private StorageReference mChatPhotosStorageReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exercises_main);
+
+        mUsername = ANONYMOUS;
+
+        // Initialize Firebase components
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseStorage = FirebaseStorage.getInstance();
+
+        mExerciseDatabaseReference = mFirebaseDatabase.getReference().child("Exercises");
 
         initializeScreen();
 
@@ -50,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         /**
          * RecyclerView
          */
+
         mLayoutManager = new GridLayoutManager(this, 2);//--> for a 2 row card layout
         mRecyclerView.setLayoutManager(mLayoutManager);
         ExerciseRecyclerAdapter mAdapter = new ExerciseRecyclerAdapter(this, null);
@@ -57,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         mExerciseImage.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.gym_pic));
 
         getSupportLoaderManager().restartLoader(0, null, this);
+
     }
 
     @Override
