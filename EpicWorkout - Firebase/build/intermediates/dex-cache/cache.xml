@@ -421,7 +421,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="4305303967482ed404d98c53f18ad0d52519f2c2">
+        sha1="a78aed0b7677caeafcf92993b8b44b9f2e51bad5">
         <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a38dcdbcd285e2bf711b31fcc82f78a89000b413\classes.dex" />
     </item>
     <item
@@ -637,7 +637,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="e03b787172d9d7e5789fa64a5137242741273ae5">
+        sha1="d2461aa8217253e039cec53ea1bd9642cb46cfd2">
         <dex dex="C:\Users\Fernaak\Documents\GitHub\AndroidStudioGits\EpicWorkout - Firebase\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0d921cc109ee4e0b0aac885d9f94fde8bdbdc739\classes.dex" />
     </item>
     <item

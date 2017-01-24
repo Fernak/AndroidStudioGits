@@ -2,25 +2,49 @@
 <manifest package="com.fernaak.epicworkout"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.fernaak.epicworkout.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+    <activity
+        android:name=".exerciseItems.ExerciseActivity"
+        android:label="Exercises"
+        android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".exerciseItems.ExercisePage"
+        android:label="Exercise Item"
+        android:parentActivityName=".exerciseItems.ExerciseActivity"
+        android:theme="@style/AppTheme.NoActionBar">
         <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".exerciseItems.ExerciseActivity"/>
+    </activity>
+    <activity
+        android:name=".workoutBuilder.WorkoutBuilderActivity"
+        android:label="Workout Builder"
+        android:parentActivityName=".exerciseItems.ExerciseActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".exerciseItems.ExerciseActivity"/>
+    </activity>
+    <activity
+        android:name=".currentWorkout.CurrentWorkoutActivity"
+        android:label="Current Workout"
+        android:parentActivityName=".workoutBuilder.WorkoutBuilderActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".exerciseItems.ExerciseActivity"/>
+    </activity>
     </application>
 
 </manifest>

@@ -44,7 +44,7 @@
     <string name="hint_exercise_description">Description</string>
 
     <!-- Label for dropdown menu option for body area -->
-    <string name="area_unknown">Unknown</string>
+    <string name="spinner_unknown">Unknown</string>
     <string name="area_arms">Arms</string>
     <string name="area_abs">Abs</string>
     <string name="area_chest">Chest</string>
@@ -71,4 +71,8 @@
     <string name="add_to_favourites">Add to Favourites</string>
     <string name="add_to_workout">Add to Workout</string>
     <string name="start_workout">Start Workout</string>
+
+    <!--WorkoutBuilder-->
+    <string name="add_exercise_button">Add to Workout</string>
+    <string name="edit_exercise_name">Edit Name</string>
 </resources>
